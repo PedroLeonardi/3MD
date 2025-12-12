@@ -1,0 +1,83 @@
+
+npx expo install expo-sqlite@latest
+
+
+SQLite database
+
+- Banco de dados baseado em arquivo;
+- Armazena os dados diretamente no device;
+- Serverless
+- Trabalha offline;
+- SQL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+A linha PRAGMA journal_mode=WAL; está configurando o banco SQLite para usar Write-Ahead Logging, deixando suas 
+transações mais rápidas e seguras em cenários de múltiplas operações.
+
+O que é isso?
+
+O SQLite precisa de um mecanismo para garantir integridade dos dados caso ocorra falha no meio de uma gravação.
+
+Por padrão, ele usa o journal rollback: antes de alterar uma página, ele grava uma cópia no arquivo -journal, e se der erro pode desfazer.
+
+O modo WAL troca essa estratégia: em vez de sobrescrever diretamente o banco, as mudanças vão para um arquivo separado (.db-wal), 
+e só depois são aplicadas definitivamente ao banco principal.
+
+Vantagens do WAL
+
+Melhor desempenho em gravações concorrentes – leitura e escrita podem acontecer ao mesmo tempo sem bloquear.
+
+Consultas mais rápidas em muitos casos porque não há tantas operações de cópia no arquivo principal.
+
+Menor risco de corrupção em algumas situações de falha.
+
+Observações no contexto do seu app (Expo + React Native + SQLite):
+
+Isso melhora a performance se seu app fizer muitas escritas.
+
+Mas cria um arquivo extra userDatabase2.db-wal ao lado do seu .db, que você deve considerar no backup/sincronização.
+
+Em dispositivos móveis, quase sempre vale a pena usar WAL, pois a concorrência leitura/escrita 
+comum (por exemplo, ler dados enquanto grava logs ou usuários).

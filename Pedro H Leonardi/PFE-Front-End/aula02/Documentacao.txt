@@ -1,0 +1,26 @@
+HISTORIA DE USUARIO
+
+- Como usuário, eu gostaria de quando eu passar o mouse por cima do item, ele se destaque dos outros, para eu compreender melhor o conteúdo
+- Como usuário eu quero que existam tag, para identificar melhor qual tipo de produto eu estou procurando, para agilizar as minhas buscas
+- Como usuário eu quero que quando eu passar o mouse por cima dos botões eles mudem as cores levemente, para eu identificar que ele é clicável
+- Como usuário eu quero que quando eu clique em algo e se ele for clicável, ele troque a cor atual brevemente para identificar que estou clicando que algum lugar correto
+
+
+REQUISITO FUNCIONAIS
+
+- O sistema deve aplicar um sistema de alteração visual por interação (hover, focus, active)
+            CRITERIOS DE ACEITE
+                quando passar o mouse pelo card ele deve crescer de tamanho
+                quando passar o mouse em um botão clicável ele deve mudar de cor
+                quando clicado em um lugar interativo, deve mudar brevemente de cor
+
+- O sistema deve conter um sistema de Tags
+            CRITERIOS DE ACEITE
+                o usuário deve ver de forma clara as tags associadas aos produtos
+
+
+REQUISITOS NÃO FUNCIONAIS
+
+Desempenho
+Responsividade
+Acessibilidade

@@ -1,0 +1,21 @@
+* Atividade
+
+Criar um app para mobile que contenha:
+
+- Tela inicial com formulário para cadastro de livros com os 
+campos título, autor, editora e preço;
+- Essa tela inicial deverá ter os botões para cadastar, 
+fazer consulta, atualizar e remover;
+- Se pressionado o botão para cadastrar, o sistema deve verificar 
+se todos os campos estão preenchidos e fazer as validações 
+necessários antes de inserir no banco;
+- Se presionado o botão para consulta, deverá ser aberta uma nova 
+tela com um campo para inserir partes do título do livro a ser 
+buscado e exibindo todas as informações do livro cadastrado;
+- Se presionado o botão para atualização, deverá ser aberta uma 
+nova tela que permita atualizar o título, autor ou editora;
+- Se presionado o botão para remoção, deverá ser aberta uma 
+nova tela que permita remover um livro.
+
+Entrega: 17 de outubro [3TD]
+

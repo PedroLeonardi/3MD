@@ -1,0 +1,23 @@
+builder - "turbo pack" - nativo do react
+
+transforma os arquivos jsx, em um compilado html, js, css 
+
+diferença entre build e e dev
+rendereização no dev é mais rapida para alterações, porem granular 
+(pode demorar | sem performance) 
+
+renderição build (mais rapida, porem não atualiza imediatamente)
+
+--
+
+SEO (Search Engine Optmization) - Motor de busca do google
+Utilizar server Components ( Melhora e muito o SEO) - page sem "use client"
+
+Google chrome já vem com o LightHouse, ou a extensão SEO seach key 
+
+-- 
+
+https://pagespeed.web.dev/ - (site para fazer esse teste tambem)
+Artillery (npm)- Simulador de Estresse 
+RabbitMQ - Serviço de mensageria
+KaFKa - similar ao mensageria

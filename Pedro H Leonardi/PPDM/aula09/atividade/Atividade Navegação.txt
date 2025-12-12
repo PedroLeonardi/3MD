@@ -1,0 +1,19 @@
+* Atividade
+
+Criar um app para mobile que contenha:
+
+- Tela inicial com imagem do negócio e um botão que leve à tela com as opções de compra;
+- Na tela de opções de compra deve haver pelo menos oitos opções com um botão de fundo transparente e uma imagem do produto. 
+- Ao precionar o botão uma nova tela deve ser aberta com uma imagem apliada do produto e informações com detalhes do mesmo e um botão para voltar à tela de opções de compra;
+
+npx expo install @react-navigation/native @react-navigation/stack react-native-gesture-handler react-native-safe-area-context @react-native-community/masked-view
+
+Sugestão para imagens: Utilizar sites com imagens 
+gratuitas, ex:
+
+pixabay.com
+freepik.com
+pexels.com
+
+Entrega: 26 de setembro
+
